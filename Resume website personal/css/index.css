@@ -1,0 +1,109 @@
+/* 首页样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a:active,
+a:link,
+a:hover,
+a:visited {
+    /* 继承 父元素的颜色 */
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    padding-top: 72px;
+}
+
+.hidden-box {
+    height: 40px;
+}
+
+/* 头部导航部分 上面 */
+header {
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    /* 层级关系 */
+    z-index: 100;
+}
+
+/* 子选择器 */
+header>.header-nav {
+    border-bottom: 1px solid #000;
+}
+
+header>.header-nav>.row div {
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-right: 1px solid #000;
+}
+
+header>.header-nav>.row div:last-child {
+    border-right: none;
+}
+
+header>.header-nav>.row div:nth-child(3) a:hover {
+    color: #f00;
+    text-decoration: underline;
+}
+
+header>.header-nav>.row div:first-child {
+    position: relative;
+}
+
+header>.header-nav>.row div:first-child:hover {
+    color: #f00;
+    text-decoration: underline;
+}
+
+header>.header-nav>.row div:first-child:hover .qrcode {
+    display: block;
+}
+
+header>.header-nav>.row div:first-child .qrcode {
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    z-index: 10;
+}
+
+/* 头部导航部分 下面 */
+header .logo-nav .navbar {
+    margin-bottom: 0;
+}
+
+header .logo-nav .brand {
+    padding: 0;
+    height: 70px;
+    font-size: 70px;
+}
+
+header .logo-nav .header-nav a {
+
+    padding: 0;
+    height: 100px;
+    line-height: 100px;
+    padding: 0 16px;
+}
+
+header .logo-nav .header-nav a:hover {
+    border-bottom: 3px solid #f00;
+}
+
+header .logo-nav .p-center i {
+    height: 100px;
+    line-height: 100px;
+    /* color: inherit; */
+}
