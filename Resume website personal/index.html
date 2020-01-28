@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-01-27 16:14:46
- * @LastEditTime : 2020-01-28 13:54:28
+ * @LastEditTime : 2020-01-28 22:15:09
  * @LastEditors  : Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \Resume website personal\index.html
@@ -14,6 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>resume website personal</title>
+    <!-- 网站图标 -->
+    <link rel="shortcut icon" href="personal_favicon.ico" />
     <!-- 已经bootstrap样式 -->
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
     <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
@@ -40,7 +42,7 @@
                     <span class="glyphicon glyphicon-phone"></span>
                     <a href="">手机微信</a>
                     <!-- 插件 path intellisense 自动补全路径 -->
-                    <img src="/images/index-erweima.jpg" alt="" class="qrcode" width="200px" height="200px">
+                    <img src="images/index-erweima.jpg" alt="" class="qrcode" width="200px" height="200px">
                 </div>
                 <div class="col-md-5">
                     <span class="glyphicon glyphicon-phone-alt"></span> 189-380-126-91(接电时间：8:00--22.30)
@@ -68,8 +70,8 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a href="#" class="navbar-brand">
-                            <img src="/images/logo.jpg" alt="" class="hidden-xs">
-                            <img src="/images/logo -小.jpg" alt="" class="visible-xs">
+                            <img src="images/logo.jpg" alt="" class="hidden-xs">
+                            <img src="images/logo -小.jpg" alt="" class="visible-xs">
                         </a>
                     </div>
 
@@ -110,20 +112,20 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item  active">
-                <img src="/images/index-lb4-640-340-2000-410.jpg" class="hidden-xs" alt="">
-                <img src="/images/index-lb4-640-340.jpg" alt="" class="visible-xs" style="margin: 0;">
+                <img src="images/index-lb4-640-340-2000-410.jpg" class="hidden-xs" alt="">
+                <img src="images/index-lb4-640-340.jpg" alt="" class="visible-xs" style="margin: 0;">
             </div>
             <div class="item">
-                <img src="/images/index-lb1-2000-410.jpg" class="hidden-xs" alt="">
-                <img src="/images/index-lb1-640-340.jpg" alt="" class="visible-xs" style="margin: 0;">
+                <img src="images/index-lb1-2000-410.jpg" class="hidden-xs" alt="">
+                <img src="images/index-lb1-640-340.jpg" alt="" class="visible-xs" style="margin: 0;">
             </div>
             <div class="item">
-                <img src="/images/index-lb2-640-340 -2000-410.jpg" class="hidden-xs" alt="">
-                <img src="/images/index-lb2-640-340.jpg" alt="" class="visible-xs" style="margin: 0;">
+                <img src="images/index-lb2-640-340 -2000-410.jpg" class="hidden-xs" alt="">
+                <img src="images/index-lb2-640-340.jpg" alt="" class="visible-xs" style="margin: 0;">
             </div>
             <div class="item">
-                <img src="/images/index-lb3-640-340 -2000-410.jpg" class="hidden-xs" alt="">
-                <img src="/images/index-lb3-640-340.jpg" alt="" class="visible-xs" style="margin: 0;">
+                <img src="images/index-lb3-640-340 -2000-410.jpg" class="hidden-xs" alt="">
+                <img src="images/index-lb3-640-340.jpg" alt="" class="visible-xs" style="margin: 0;">
             </div>
             <!-- Controls -->
             <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -216,29 +218,307 @@
     <!-- 中间预览次数部分部分 -->
     <div class="queue">
         <div class="container queue-box">
-            <div class="queue-1">
-                <span class="glyphicon glyphicon-time"></span>现在有222人正在浏览，累计浏览人数100w。
-                <a href="#">给予奖励</a>
-
+            <div class="queue-l">
+                <span class="glyphicon glyphicon-time"></span> 现在有 222 人在浏览此网站，累计浏览次数达10w。
+                <a href="#">奖励开发者</a>
             </div>
             <div class="queue-r text-right hidden-xs">
-                <span class="glyphicon glyphicon-camera"></span>个人宣传片
+                <span class="glyphicon glyphicon-camera"></span> 个人宣传片
             </div>
-
         </div>
     </div>
     <!-- 中间内容部分 最主要 -->
-    <div class="cards"></div>
-    <div class="allnews"></div>
+    <!-- 1.卡片部分 可切换 -->
+    <div class="cards">
+        <div class="wrapper">
+            <!-- Nav tabs  切换部分 -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#home" aria-controls="home" role="tab" data-toggle="tab">掌握技能</a>
+                </li>
+                <li role="presentation">
+                    <a href="#h5" aria-controls="h5" role="tab" data-toggle="tab">HTML-5</a>
+                </li>
+                <li role="presentation">
+                    <a href="#c3" aria-controls="c3" role="tab" data-toggle="tab">CSS-3</a>
+                </li>
+                <li role="presentation">
+                    <a href="#JS" aria-controls="JS" role="tab" data-toggle="tab">JavaScript</a>
+                </li>
+                <li role="presentation">
+                    <a href="#vue-js" aria-controls="vue-js" role="tab" data-toggle="tab">Vue.js</a>
+                </li>
+                <li role="presentation">
+                    <a href="#php" aria-controls="php" role="tab" data-toggle="tab">PHP</a>
+                </li>
+            </ul>
+            <!-- tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <!-- 第一个 H5 -->
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <a href="javascript:;" class="defalut_cart">
+                                    <div class="pull_left">
+                                        <h4>HTML-5</h4>
+                                        <div class="pull_left_bottom">
+                                            <div>
+                                                <p>语义化标签</p>
+                                                <p>语义化标签</p>
+                                                <p>语义化标签</p>
+                                                <p>语义化标签</p>
+                                            </div>
+                                            <div>
+                                                <p>新媒体标签</p>
+                                                <p>新媒体标签</p>
+                                                <p>新媒体标签</p>
+                                                <p>新媒体标签</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pull_right">
+                                        <h3>80
+                                            <span>%</span>
+                                        </h3>
+                                        <p>掌握程度</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- 第一个 H5 -->
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <a href="javascript:;" class="defalut_cart">
+                                    <div class="pull_left">
+                                        <h4>HTML-5</h4>
+                                        <div class="pull_left_bottom">
+                                            <div>
+                                                <p>语义化标签</p>
+                                                <p>语义化标签</p>
+                                                <p>语义化标签</p>
+                                                <p>语义化标签</p>
+                                            </div>
+                                            <div>
+                                                <p>新媒体标签</p>
+                                                <p>新媒体标签</p>
+                                                <p>新媒体标签</p>
+                                                <p>新媒体标签</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pull_right">
+                                        <h3>80
+                                            <span>%</span>
+                                        </h3>
+                                        <p>掌握程度</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- 第一个 H5 -->
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <a href="javascript:;" class="defalut_cart">
+                                    <div class="pull_left">
+                                        <h4>HTML-5</h4>
+                                        <div class="pull_left_bottom">
+                                            <div>
+                                                <p>语义化标签</p>
+                                                <p>语义化标签</p>
+                                                <p>语义化标签</p>
+                                                <p>语义化标签</p>
+                                            </div>
+                                            <div>
+                                                <p>新媒体标签</p>
+                                                <p>新媒体标签</p>
+                                                <p>新媒体标签</p>
+                                                <p>新媒体标签</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pull_right">
+                                        <h3>80
+                                            <span>%</span>
+                                        </h3>
+                                        <p>掌握程度</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- 第一个 H5 -->
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <a href="javascript:;" class="defalut_cart">
+                                    <div class="pull_left">
+                                        <h4>HTML-5</h4>
+                                        <div class="pull_left_bottom">
+                                            <div>
+                                                <p>语义化标签</p>
+                                                <p>语义化标签</p>
+                                                <p>语义化标签</p>
+                                                <p>语义化标签</p>
+                                            </div>
+                                            <div>
+                                                <p>新媒体标签</p>
+                                                <p>新媒体标签</p>
+                                                <p>新媒体标签</p>
+                                                <p>新媒体标签</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pull_right">
+                                        <h3>80
+                                            <span>%</span>
+                                        </h3>
+                                        <p>掌握程度</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- 第一个 H5 -->
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <a href="javascript:;" class="defalut_cart">
+                                    <div class="pull_left">
+                                        <h4>HTML-5</h4>
+                                        <div class="pull_left_bottom">
+                                            <div>
+                                                <p>语义化标签</p>
+                                                <p>语义化标签</p>
+                                                <p>语义化标签</p>
+                                                <p>语义化标签</p>
+                                            </div>
+                                            <div>
+                                                <p>新媒体标签</p>
+                                                <p>新媒体标签</p>
+                                                <p>新媒体标签</p>
+                                                <p>新媒体标签</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pull_right">
+                                        <h3>80
+                                            <span>%</span>
+                                        </h3>
+                                        <p>掌握程度</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane " id="h5">222</div>
+                <div role="tabpanel" class="tab-pane" id="c3">333</div>
+                <div role="tabpanel" class="tab-pane" id="JS">4444</div>
+                <div role="tabpanel" class="tab-pane" id="vue-js">6666</div>
+                <div role="tabpanel" class="tab-pane" id="php">555555</div>
+            </div>
+        </div>
+    </div>
+    <!-- 前端热点新闻内容 -->
+    <div class="allnews">
+        <div class="row">
+            <div class="col-md-2 col-md-offset-3 col-xs-12">
+                <span>前端热点</span>
+            </div>
+            <div class="col-md-2">
+                <ul class="tab-title row" role="tablist">
+                    <li role="presentation" class="active col-xs-3 col-md-12"><a href="#jsnews" aria-controls="jsnews"
+                            role="tab" data-toggle="tab"><i class="fa fa-font-awesome"></i></a></li>
+                    <li role="presentation" class="col-xs-3 col-md-12"><a href="#h5news" aria-controls="h5news"
+                            role="tab" data-toggle="tab"><i class="fa fa-html5"></i></a></li>
+                    <li role="presentation" class="col-xs-3 col-md-12"><a href="#c3news" aria-controls="c3news"
+                            role="tab" data-toggle="tab"><i class="fa fa-css3"></i></a></li>
+
+                    <li role="presentation" class="col-xs-3 col-md-12"><a href="#vuenews" aria-controls="vuenews"
+                            role="tab" data-toggle="tab"><i class="fa fa-vimeo-square"></i></a></li>
+                </ul>
+            </div>
+            <!-- 热点分类列表 -->
+            <div class="col-md-5">
+                <div class="tab-content">
+                    <!-- js热点 -->
+                    <div role="tabpanel" class="tab-pane active" id="jsnews">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="#">aaaaaaa</a></li>
+                            <li class="list-group-item"><a href="#">aaaaaaa</a></li>
+                            <li class="list-group-item"><a href="#">aaaaaaa</a></li>
+                            <li class="list-group-item"><a href="#">aaaaaaa</a></li>
+                            <li class="list-group-item"><a href="#">aaaaaaa</a></li>
+                        </ul>
+                    </div>
+                    <!-- h5热点 -->
+                    <div role="tabpanel" class="tab-pane" id="h5news">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="#">bbbbbbb</a></li>
+                            <li class="list-group-item"><a href="#">bbbbbbb</a></li>
+                            <li class="list-group-item"><a href="#">bbbbbbb</a></li>
+                            <li class="list-group-item"><a href="#">bbbbbbb</a></li>
+                            <li class="list-group-item"><a href="#">bbbbbbb</a></li>
+                        </ul>
+                    </div>
+                    <!-- css3热点 -->
+                    <div role="tabpanel" class="tab-pane" id="c3news">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="#">cccccc</a></li>
+                            <li class="list-group-item"><a href="#">cccccc</a></li>
+                            <li class="list-group-item"><a href="#">cccccc</a></li>
+                            <li class="list-group-item"><a href="#">cccccc</a></li>
+                            <li class="list-group-item"><a href="#">cccccc</a></li>
+                        </ul>
+                    </div>
+                    <!-- vue热点 -->
+                    <div role="tabpanel" class="tab-pane" id="vuenews">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="#">ooooooo</a></li>
+                            <li class="list-group-item"><a href="#">ooooooo</a></li>
+                            <li class="list-group-item"><a href="#">ooooooo</a></li>
+                            <li class="list-group-item"><a href="#">ooooooo</a></li>
+                            <li class="list-group-item"><a href="#">ooooooo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- 底部部分 -->
-    <footer></footer>
+    <footer>
+        <div class="w">
+            <div class="footer-l">
+                <img src="images/logo.jpg" height="60" width="110">
+                <p>个人学习-简历网站。<br>
+                    © 2019年SEAN Inc.保留所有权利。-粤ICP备19143925号</p>
+                <a href="#" id="">下载APP</a>
+            </div>
+            <div class="footer-r">
+                <dl>
+                    <dt>关于111</dt>
+                    <dd>关于</dd>
+                    <dd>管理团队</dd>
+                    <dd>工作机会</dd>
+                    <dd>客户服务</dd>
+                    <dd>帮助</dd>
+                </dl>
+                <dl>
+                    <dt>关于111</dt>
+                    <dd>关于</dd>
+                    <dd>管理团队</dd>
+                    <dd>工作机会</dd>
+                    <dd>客户服务</dd>
+                    <dd>帮助</dd>
+                </dl>
+                <dl>
+                    <dt>关于1111</dt>
+                    <dd>关于</dd>
+                    <dd>管理团队</dd>
+                    <dd>工作机会</dd>
+                    <dd>客户服务</dd>
+                    <dd>帮助</dd>
+                </dl>
+            </div>
+        </div>
+    </footer>
 
 
     <!-- 引进首页JS文件 -->
 
 
-
+    <!-- 引进轮播图插件 iscroll.js -->
+    <script src="lib/bootstrap/js/iscroll.js"></script>
 
 </body>
 
