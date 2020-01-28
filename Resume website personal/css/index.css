@@ -19,7 +19,7 @@ img {
 }
 
 body {
-    padding-top: 72px;
+    padding-top: 52px;
 }
 
 .hidden-box {
@@ -90,6 +90,13 @@ header .logo-nav .brand {
     font-size: 70px;
 }
 
+.navbar-header .navbar-brand {
+    /* width: 324px; */
+    /* height: 70px; */
+    padding: 0;
+    margin: 0;
+}
+
 header .logo-nav .header-nav a {
 
     padding: 0;
@@ -106,4 +113,82 @@ header .logo-nav .p-center i {
     height: 100px;
     line-height: 100px;
     /* color: inherit; */
+}
+
+/* slogan 标语部分 */
+.slogan {
+    margin: 20px auto;
+}
+
+.slogan>.row>div {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.slogan>.row>div i {
+    font-size: 40px;
+    margin-right: 10px;
+    color: #666;
+}
+
+.slogan>.row>div .slogan-r {
+    cursor: pointer;
+}
+
+.slogan>.row>div .slogan-r h3 {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #666;
+}
+
+.slogan>.row>div .slogan-r h3 a:hover {
+    text-decoration: underline;
+    color: #f00;
+}
+
+/* .slogan>.row>div .slogan-r h3 a:hover> span {
+    text-decoration: none;
+    color: #f00;
+} */
+
+.slogan>.row>div .slogan-r span {
+    font-size: 12px;
+    color: #666;
+}
+
+/* .slogan>.row>div .slogan-r:hover {
+    color: #f00;
+} */
+
+
+/* 浏览次数部分 */
+.queue {
+    height: 100px;
+    line-height: 100px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.queue .queue-box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.queue .queue-box .queue-1 {
+    flex: 1;
+}
+
+.queue .queue-box .queue-1 a {
+    color: #f00;
+}
+
+.queue .queue-box .queue-1 a:hover {
+    text-decoration: underline;
+}
+
+.queue .queue-box .queue-r {
+    /* width: 200px; */
+    /* float: right; */
 }
