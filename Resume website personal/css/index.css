@@ -206,7 +206,7 @@ header .logo-nav .p-center i {
     padding-right: 80px;
     padding-left: 10px;
     margin-bottom: 12px;
-    background-color: #ff0000;
+    background-color: #ff3b30;
 }
 
 .cards .tab-content .defalut_cart:hover {
@@ -291,6 +291,23 @@ header .logo-nav .p-center i {
     font-size: 12px;
 }
 
+
+/* 卡片部分各个模块部分 */
+.cards .wrapper .tab-content .cards-details>div>ul {
+    list-style-type: none;
+}
+
+.cards .wrapper .tab-content .cards-details>div>ul>li {
+    margin: 5px 0;
+}
+
+.cards .wrapper .tab-content .cards-details>div>ul>li>a:hover {
+    text-decoration: underline;
+    color: #ff3b30;
+}
+
+
+
 /* 中间前端热点部分 */
 .allnews {
     margin-top: 30px;
@@ -344,7 +361,7 @@ header .logo-nav .p-center i {
 }
 
 .allnews .row .tab-title li.active>a>i {
-    color: #ff0000;
+    color: #ff3b30;
     margin-left: 8px;
     text-align: center;
 }
@@ -363,7 +380,7 @@ header .logo-nav .p-center i {
 .allnews .row .tab-title li>a:focus>i {
     text-decoration: none;
     /* background-color: #f00; */
-    color: #ff0000;
+    color: #ff3b30;
     text-align: center;
 }
 
@@ -397,7 +414,7 @@ footer .container .text-center>li>a span {
 
 footer .container .list-unstyled>li>a:hover {
     text-decoration: underline;
-    color: #ff0000;
+    color: #ff3b30;
 }
 
 /* footer {
